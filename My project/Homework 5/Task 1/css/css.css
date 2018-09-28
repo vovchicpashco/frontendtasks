@@ -1,0 +1,25 @@
+.col {
+    border: 1px solid burlywood;
+    background: rgba(202, 5, 5, 0.877);
+    text-align: center;
+}
+span.flow-text {
+    font-size: 8em;
+    color: antiquewhite;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 600px) {
+    .m6 {
+        height: 34vh;
+    }
+    .col {
+        height: 33vh;
+    }
+}
+@media (min-width:992px) {
+    .col {
+    height: 100vh;
+    }
+    
+}

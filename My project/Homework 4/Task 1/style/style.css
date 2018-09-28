@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+.box {
+    width: 80vw;
+    height: 100vh;
+    background: greenyellow;
+    border-radius: 30px;
+    border-left: 3px solid rgb(247, 33, 33);
+    border-right: 3px solid rgb(247, 33, 33);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    
+}
+.bigbox div {
+    display: inline-block;
+
+}
+.box0 {
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:transparent transparent red transparent;
+    border-style: solid;
+}
+.box1{
+        height: 1px;
+        width: 1px;
+        border-width: 30px 30px 30px 30px;
+        border-color: red transparent transparent transparent;
+        border-style: solid;
+    }
+.box2{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:transparent transparent transparent green;
+    border-style: solid;
+}
+.box3{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:transparent green transparent transparent;
+    border-style: solid;
+}
+.box4{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:transparent transparent yellow yellow;
+    border-style: solid;
+}
+.box5{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:transparent yellow yellow transparent;
+    border-style: solid;
+}
+.box6{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color: blue  blue  transparent transparent;
+    border-style: solid;
+}
+.box7{
+    height: 1px;
+    width: 1px;
+    border-width: 30px 30px 30px 30px;
+    border-color:blue transparent transparent blue;
+    border-style: solid;
+}

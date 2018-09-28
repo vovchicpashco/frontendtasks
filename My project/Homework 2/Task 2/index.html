@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form method="GET" id="my_form"></form> 
+        <table border="1" >
+            <tr>
+                <th bgcolor="violet">Name</th>
+                <th bgcolor="violet">Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="Name" form="my_form"   maxlenght="12"></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><input type="radio" form="my_form" name="Sex">Male<input type="radio" form="my_form" name="Sex">Female</td>
+            </tr>
+            <tr>
+                <td>Eye color</td>
+                <td><select name="Eye color" form="my_form">
+                    <option value="blue">blue</option>
+                    <option value="green" selected>green</option>
+                    <option value="brown">brown</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td><input type="checkbox" form="my_form" name="a" value="Over 6 feet tall">Over 6 feet tall<br>
+                    <input type="checkbox" form="my_form" name="a" value="Over 200 pounds">Over 200 pounds
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2"><p>Describe your athletic ability:</p>
+                <textarea height="100" cols="40" form="my_form" ></textarea>
+                </td>
+             </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" form="my_form" value="Enter my information"></td>
+            </tr>
+        </table>
+</body>
+</html>
