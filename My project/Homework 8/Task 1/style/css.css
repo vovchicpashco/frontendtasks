@@ -91,6 +91,13 @@ nav ul a::after {
     vertical-align: bottom;
     
 }
+span.title {
+    display: inline-block;
+    min-width: 120px;
+}
+.info-list {
+    margin-top: 50px;
+}
 /*carousel
 .carousel {
     height: 4em;
