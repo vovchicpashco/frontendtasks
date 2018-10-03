@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    background-color: blue;
+    padding: 20px;
+    height:auto;
+    display: inline-block;
+    
+}
+fieldset {
+    position: relative;
+    
+}
+table {
+    border-spacing: 2vw;
+    table-layout: fixed;
+    width: 90%;
+}
+td, th, legend {
+    color: white;
+}
+th {
+    text-align: right;
+    vertical-align: top;
+}
+.input_text, form {
+    width: 100%;
+}
+
+
+p .button {
+    vertical-align: middle;
+    height: 2em;
+    width: 2em;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+p {
+    text-align: center;
+    color: white;
+}
+textarea {
+    height: 3em;
+    
+}
