@@ -25,16 +25,20 @@ th {
     vertical-align: top;
 }
 .input_text, form {
-    width: 100%;
+    width: 90%;
 }
 
 
 p .button {
     vertical-align: middle;
-    height: 2em;
-    width: 2em;
-    border-radius: 15px;
+    height: 3em;
+    width: 3em;
+    border-radius: 20px;
     background-color: greenyellow;
+}
+span.i {
+    font-size: x-large;
+    color: white;
 }
 p {
     text-align: center;
