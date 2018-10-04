@@ -18,10 +18,6 @@ h2{
  color: white;
  background-color: #2eca7f;
 }
-h5 {
-    animation: bouncing 2s cubic-bezier(0.1,0.25,0.2,1) 0s infinite alternate both;
-    position: relative;
-}
 
 
 .container {
@@ -49,8 +45,9 @@ text-align: center;
 background-color: #2eca7f;
 }
 .row.header_main{
-    height: 40vh;
+    height: auto;
     background-color: #2eca7f;
+    padding: 2vh;
 }
 strong {
     color: #2eca7f;
@@ -112,7 +109,7 @@ nav ul a::after {
     50% {transform: translateY(50px);}
     100% { transform: translateY(0);}
 }
-.h5.flow-text.white-text{
+.bouncing1.white-text{
     animation: bouncing 3s cubic-bezier(0.1,0.25,0.2,1) 0s infinite alternate both;
     border-radius: 8px;
 }
@@ -164,4 +161,46 @@ span.title {
 }
 .card .card-image img {
     height: 30vh;
+}
+.timeline {
+    border-left: 2px solid #e0e0e0;
+    padding: 15px 0;
+}
+.timeline-item {
+    position: relative;
+    padding: 15px 20px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-left: 2px solid #2eca7f;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+}
+.timeline-item:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -29px;
+    border: 2px solid #2eca7f;
+    z-index: 2;
+}
+.timeline-item:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #2eca7f;
+    border-radius: 10px;
+    width: 29px;
+    height: 2px;
+    top: 25px;
+    left: -29px;
+    z-index: 1;
+}
+.item-small {
+    border-left: 2px solid #e0e0e0;
+
 }
