@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/lavender.jpg);
+    background-attachment: fixed;
+    font-family: 'Charmonman', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+
+a.brand-logo {
+    /* border: 2px double beige; */
+    height: 100%;
+    max-width: 5vw;
+    text-align: center;
+}
+
+img.responsive-img.logo {
+    width: 90%;
+    height:90%;
+   
+}
+
+.col.s12.header h1, .margin h4 {
+    font-family: 'Charmonman', cursive;
+}
+.margin h4 {
+    margin: 20px auto auto 10px;
+    position: absolute;
+}
+
+/* Animated border, footer of section*/
+.container .row .col.s12.m4 .margin {
+    align-content: center;
+    position: relative;
+    height: 35vmax;
+}
+
+div.col.s12.m4 { 
+    position: relative;
+}
+
+div.col.s12.m4:hover {
+    animation: scale-background .6s linear .0s forwards;
+}
+
+div.col.s12.m4.first_col {
+    background-image: url(../img/second_col.jpg);
+}
+
+div.col.s12.m4.second_col {
+    background-image: url(../img/first_col.jpg);
+}
+
+div.col.s12.m4.third_col {
+    background-image: url(../img/third_col.jpg);
+}
+
+div.col.s12.m4.first_col, div.col.s12.m4.second_col, div.col.s12.m4.third_col {
+    background-position: center;
+    background-size: auto 35vmax; 
+} 
+
+div.col.s12.m4 .margin::before, div.col.s12.m4 .margin::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    margin: 5px;
+    
+}
+
+div.col.s12.m4 .margin:hover::before {
+    animation: animate .1s linear forwards;
+}
+
+div.col.s12.m4 .margin:hover::after {
+    animation: animate2 .1s linear forwards;
+}
+
+@keyframes scale-background {
+    0% {background-size: auto 35vmax;}
+    50% {background-size: auto calc(35vmax + 15%);}
+    100% {background-size: auto calc(35vmax + 30%);}
+}
+
+@keyframes animate {
+    0% { width: 0;
+         height: 0;
+         border-top-color: whitesmoke;
+         border-right-color: transparent;
+         border-bottom-color: transparent;
+         border-left-color: transparent;
+    }
+    50% { width: 100%;
+          height: 0;
+          border-top-color: whitesmoke;
+          border-right-color: whitesmoke;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+   }
+    100% { width: 100%;
+           height: calc(100% - 5px);
+           border-top-color: whitesmoke;
+           border-right-color: whitesmoke;
+           border-bottom-color: transparent;
+           border-left-color: transparent;
+    }
+}
+
+@keyframes animate2 {
+    0% { width: 0;
+         height: 0;
+         border-top-color: transparent;
+         border-right-color: transparent;
+         border-bottom-color: whitesmoke;
+         border-left-color: whitesmoke;
+    }
+    50% { width: 0;
+          height: calc(100% - 5px);
+          border-top-color: transparent;
+          border-right-color: transparent;
+          border-bottom-color: whitesmoke;
+          border-left-color: whitesmoke;
+   }
+    100% { width: 100%;
+           height: calc(100% - 5px);
+           border-top-color: transparent;
+           border-right-color: transparent;
+           border-bottom-color: whitesmoke;
+           border-left-color: whitesmoke;
+    }
+}
+
+
+/* Animation background */
+nav, footer {
+    animation: colorchange 30s infinite; /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 30s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background: #e7ccff;}
+  25%  {background: #9078ce;}
+  50%  {background: #623379;}
+  75%  {background: #9078ce;}
+  100% {background: #e7ccff;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{ 0%   {background: #e7ccff;}
+  25%  {background: #9078ce;}
+  50%  {background: #623379;}
+  75%  {background: #9078ce;}
+  100% {background: #e7ccff;}
+}
+
+/* Page-footer */
+footer.page-footer {
+    margin-bottom: 0;
+}

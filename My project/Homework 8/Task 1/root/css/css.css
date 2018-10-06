@@ -19,8 +19,7 @@ h2 {
 
 .container {
     flex: 1 0 auto;
-   
-}
+   }
 
 .wrapper {
     border-radius: 15px;
@@ -35,7 +34,7 @@ margin-bottom: 0;
 }
 
 .row.header .col {
-    height: 25vh;
+    height: 20vh;
 }
 
 .col.l6 {
@@ -55,10 +54,12 @@ strong {
     color: #2eca7f;
 }
 /* Home */
+/* animation */
 @keyframes bouncing {
     0% { bottom: 0;  color: #a73b10; letter-spacing: 2px;}
     100% { bottom: 50px; }
 }
+
 @keyframes scaling {
     0% { transform: scale(1);}
     25% { transform: scale(1.5);}
@@ -66,7 +67,8 @@ strong {
     75%  { transform: scale(1.5);}
     100% { transform: scale(1);}
 }
-@keyframes translating{
+
+@keyframes translating {
     0% { transform: translateY(0);}
     50% {transform: translateY(50px);}
     100% { transform: translateY(0);}
@@ -75,10 +77,12 @@ strong {
 nav ul a, .brand-logo a, nav a {
     color:  #49515d;
 }
+
 .bouncing1.white-text{
     animation: bouncing 3s cubic-bezier(0.1,0.25,0.2,1) 0s infinite alternate both;
     border-radius: 8px;
 }
+
 .portret:hover {
    /* animation: bouncing 2s cubic-bezier(0.1,0.25,0.2,1) 0s 1 alternate none;*/
    /* animation: scaling 10s steps(1) 0s 1;*/
@@ -114,7 +118,8 @@ span.title {
 .btn-floating i {
     color: #bdbdbd;
 }
-.card .card-image img {
+
+.card-image img.responsive-img {
     height: 30vh;
 }
 /* Resume */
