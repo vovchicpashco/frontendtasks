@@ -168,3 +168,10 @@ span.title {
     border-left: 2px solid #e0e0e0;
 
 }
+/* Calculator*/
+form div input.display { 
+    border: 1px solid grey;
+    width: 25vw;
+
+
+}
