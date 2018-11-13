@@ -62,7 +62,9 @@ body {
   
   .leftPanel {
     display: inline-block;
+    width: 75% ;
   }
+
   
   .numbers input {
     display: inline-block;
@@ -92,11 +94,8 @@ body {
     display: inline-block;
     border: 1px solid #3079ED;
     border-radius: 1px;
-    width: 17%;
-    text-align: center;
-    padding: 127px 10px;
+    padding: 10px 135px;
     margin: 10px 6px 10px 0;
-    vertical-align: top;
     cursor: pointer;
     color: #FFF;
     background-color: #4d90fe;
@@ -113,3 +112,8 @@ body {
   input.equal:active {
     font-weight: bold;
   }
+  
+  div.numbers, div.operators, div.equalwrapp {
+      display: inline-block;
+  }
+ 

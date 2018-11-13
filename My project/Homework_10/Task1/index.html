@@ -12,53 +12,59 @@
 <body>
     <form action="index.html" method="post" name="testform">
         <div class="calculator">
-            <div> <input type="text" name="res" onclick="" class="display" dir="rtl" value=""><br>
+            <div class="button">
+                <div> <input type="text" name="res" onclick="" class="display" dir="rtl" value=""><br>
 
-                <input type="hidden" name="op" value="+">
-                <input type="hidden" name="tmp" value="0">
-                <input type="hidden" name="flag" value="false"></div>
+                    <input type="hidden" name="op" value="+">
+                    <input type="hidden" name="tmp" value="0">
+                    <input type="hidden" name="flag" value="false"></div>
 
-            <div class="operators">
-                <input class="btn-floating" type="button" name="btnDivide" value="/" onclick="divide()" class="btn"><input
-                    class="btn-floating" type="button" name="btnMultiple" value="*" onclick="multipl()" class="btn">
-                <input class="btn-floating" type="button" name="btnMinus" value="-" onclick="subtraction()" class="btn">
-                <input class="btn-floating operator" type="button" name="btnPlus" value="+" onclick="addition()" class="btn"></div>
-<div class="leftPanel">
-            <div class="numbers"> <input class="btn-floating" type="button" name="num7" value="7" onclick="return res.value += num7.value"
-                    class="btn">
-                <input class="btn-floating " type="button" name="num8" value="8" onclick="return res.value += num8.value"
-                    class="btn">
-                <input class="btn-floating" type="button" name="num9" value="9" onclick="return res.value += num9.value"
-                    class="btn">
+                <div class="operators">
+                    <input class="btn-floating" type="button" name="btnDivide" value="/" onclick="divide()" class="btn"><input
+                        class="btn-floating" type="button" name="btnMultiple" value="*" onclick="multipl()" class="btn">
+                    <input class="btn-floating" type="button" name="btnMinus" value="-" onclick="subtraction()" class="btn">
+                    <input class="btn-floating operator" type="button" name="btnPlus" value="+" onclick="addition()"
+                        class="btn"></div>
+                <div class="leftPanel">
+                    <div class="numbers"> <input class="btn-floating" type="button" name="num7" value="7" onclick="return res.value += num7.value"
+                            class="btn">
+                        <input class="btn-floating " type="button" name="num8" value="8" onclick="return res.value += num8.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="num9" value="9" onclick="return res.value += num9.value"
+                            class="btn">
+                    </div>
+
+                    <div class="numbers"> <input class="btn-floating " type="button" name="num4" value="4" onclick="return res.value += num4.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="num5" value="5" onclick="return res.value += num5.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="num6" value="6" onclick="return res.value += num6.value"
+                            class="btn">
+
+                    </div>
+
+                    <div class="numbers"> <input class="btn-floating" type="button" name="num1" value="1" onclick="return res.value += num1.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="num2" value="2" onclick="return res.value += num2.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="num3" value="3" onclick="return res.value += num3.value"
+                            class="btn">
+
+                    </div>
+                    <div class="numbers">
+
+                        <input class="btn-floating" type="button" name="num0" value="0" onclick="return res.value += num0.value"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="dot" value="." onclick="return res.value +='.'"
+                            class="btn">
+                        <input class="btn-floating" type="button" name="numC" value="C" onclick="return res.value =''"
+                            class="btn">
+                    </div>
+                    <div class="equalwrapp">
+                        <input type="button" name="e" value="=" onclick="return res.value = getResult(tmp.value,res.value,op.value)"
+                            class="equal"></div>
+                </div>
             </div>
-
-            <div class="numbers"> <input class="btn-floating " type="button" name="num4" value="4" onclick="return res.value += num4.value"
-                    class="btn">
-                <input class="btn-floating" type="button" name="num5" value="5" onclick="return res.value += num5.value"
-                    class="btn">
-                <input class="btn-floating" type="button" name="num6" value="6" onclick="return res.value += num6.value"
-                    class="btn">
-
-            </div>
-
-            <div class="numbers"> <input class="btn-floating" type="button" name="num1" value="1" onclick="return res.value += num1.value"
-                    class="btn">
-                <input class="btn-floating" type="button" name="num2" value="2" onclick="return res.value += num2.value"
-                    class="btn">
-                <input class="btn-floating" type="button" name="num3" value="3" onclick="return res.value += num3.value"
-                    class="btn">
-
-            </div>
-            <div class="numbers">
-
-                <input class="btn-floating" type="button" name="num0" value="0" onclick="return res.value += num0.value"
-                    class="btn">
-                <input class="btn-floating operator" type="button" name="numC" value="C" onclick="return res.value =''"
-                    class="btn">
-                <input class="btn-floating operator" type="button" name="e" value="=" onclick="return res.value = getResult(tmp.value,res.value,op.value)"
-                    class="btn equal">
-
-            </div></div>
         </div>
     </form>
     <script type="text/javascript" src="js/script.js"></script>
