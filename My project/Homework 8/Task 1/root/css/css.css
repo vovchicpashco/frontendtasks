@@ -9,9 +9,9 @@ body {
     min-height: 100vh;
 }
 
-ul.sidenav, h2, .row.header, .row.header_main, .timeline-item:after {
-    background-color: #2eca7f;
-}
+/* ul.sidenav, h2, .row.header, .row.header_main, .timeline-item:after { */
+    /* background-color: #2eca7f; */
+/* } */
 
 h2 {
  color: white;
@@ -21,7 +21,7 @@ h2 {
     flex: 1 0 auto;
    }
 
-.wrapper {
+/* .wrapper {
     border-radius: 15px;
     box-shadow: 0px 15px 25px 0px;
     overflow: hidden;
@@ -31,28 +31,28 @@ h2 {
 
 .wrapper .row {
 margin-bottom: 0;
-}
+} */
 
-.row.header .col {
+/* .row.header .col {
     height: 20vh;
-}
+} */
 
 .col.l6 {
     padding-bottom: 3em;
 }
 
-.row.header {
+/* .row.header {
 text-align: center;
 }
 
 .row.header_main {
     height: auto;
     padding: 2vh;
-}
+} */
 
-strong {
+/* strong {
     color: #2eca7f;
-}
+} */
 /* Home */
 /* animation */
 @keyframes bouncing {
@@ -83,10 +83,10 @@ nav ul a, .brand-logo a, nav a {
     border-radius: 8px;
 }
 
-.portret:hover {
+/* .portret:hover {
    /* animation: bouncing 2s cubic-bezier(0.1,0.25,0.2,1) 0s 1 alternate none;*/
    /* animation: scaling 10s steps(1) 0s 1;*/
-   animation: translating 4s linear infinite;
+ /*  animation: translating 4s linear infinite;
     
 }
 
@@ -98,7 +98,7 @@ nav ul a, .brand-logo a, nav a {
     box-shadow: 0px 3px 8px 0px;
     vertical-align: bottom;
     position: relative;
-}
+} */
 
 img.responsive-img {
  width: 90%;
@@ -123,7 +123,7 @@ span.title {
     height: 30vh;
 }
 /* Resume */
-.timeline {
+/* .timeline {
     border-left: 2px solid #e0e0e0;
     padding: 15px 0;
 }
@@ -167,4 +167,4 @@ span.title {
 .item-small {
     border-left: 2px solid #e0e0e0;
 
-}
+} */
