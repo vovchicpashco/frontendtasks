@@ -1,29 +1,4 @@
-/*function sum (a, b) {
-  z =  document.forms['testform'].rec.value = parseFloat(a) + parseFloat(b);
-
-    return z;
-};
-
-function operation() {
-    document.forms['testform'].tmp.value = document.forms['testform'].rec.value;
-    document.forms['testform'].op.value = document.forms['testform'].btn_plus.value;
-    document.forms['testform'].rec.value = ""; 
-};
-
-function getResult (a, b, o) {
-     
-    if (o == "+") {
-        return parseFloat(a) + parseFloat(b);
-    } else if (o == "-") {
-        return parseFloat(a) - parseFloat(b);
-    } else if (o == "*") {
-        return parseFloat(a) * parseFloat(b);
-    } else if (o == "/") {
-        return parseFloat(a) / parseFloat(b);
-    }
-    
-};*/
-function addition(a) {
+function addition(a,v) {
     a = document.forms["testform"].btnPlus.value;
     var f = document.forms["testform"].flag.value;
       if (document.forms["testform"].flag.value == "false") {
